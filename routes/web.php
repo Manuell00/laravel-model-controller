@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Dico al file web.php dove trovare ModelMovie cotroller
-use App\Http\Controllers\Guest\ModelMovie as ModelMovie;
+use App\Http\Controllers\Guest\PageController as PageController;
 
 // Lo indichiamo nella rotta
-Route::get('/', [ModelMovie::class, 'index']);
+Route::get('/', [PageController::class, 'index'])->name('home');
